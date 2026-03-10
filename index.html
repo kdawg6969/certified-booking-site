@@ -23,7 +23,8 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+
 
   body {
     font-family: 'DM Sans', sans-serif;
@@ -32,6 +33,7 @@
     line-height: 1.65;
     font-size: 17px;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   /* ── UTILITY ── */
@@ -219,6 +221,9 @@
   /* Hero visual card */
   .hero__visual {
     position: relative;
+    max-width: 100%;
+    overflow: visible;
+    min-width: 0;
   }
   .hero__card {
     background: #fff;
@@ -226,6 +231,8 @@
     padding: 36px;
     box-shadow: 0 24px 80px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
     border: 1px solid var(--border);
+    max-width: 100%;
+    overflow: hidden;
   }
   .hero__card-header {
     display: flex; align-items: center; justify-content: space-between;
@@ -285,6 +292,8 @@
     padding: 10px 14px;
     background: var(--chalk);
     border-radius: 8px;
+    overflow: hidden;
+    min-width: 0;
   }
   .hero__activity-row .icon {
     width: 32px; height: 32px;
@@ -310,6 +319,7 @@
     box-shadow: 0 12px 40px rgba(42,111,91,0.3);
     display: flex; align-items: center; gap: 12px;
     font-size: 14px; font-weight: 600;
+    max-width: calc(100% - 10px);
   }
   .hero__float .number {
     font-family: 'Instrument Serif', serif;
@@ -356,6 +366,8 @@
   .problem__visual {
     position: relative;
     padding: 40px;
+    max-width: 100%;
+    overflow: hidden;
   }
   .problem__revenue-box {
     background: #fff;
@@ -681,7 +693,21 @@
     .bonuses__grid { grid-template-columns: 1fr; }
     .hero__visual { margin-top: 40px; }
     .hero__float { bottom: -10px; left: 0; }
+    .hero__card { padding: 24px; }
+    .problem__visual { padding: 20px 0; }
     .nav__links { display: none; }
+  }
+  @media (max-width: 768px) {
+    .container { padding: 0 16px; }
+    .hero { padding: 130px 0 100px; }
+    .hero__badge { font-size: 12px; padding: 6px 14px; }
+    .hero__actions .btn { width: 100%; justify-content: center; }
+    .problem__revenue-box { padding: 32px 20px; }
+    .problem__revenue-box .amount { font-size: 2.5rem; }
+    .guarantee__card { padding: 40px 24px; }
+    .who__col { padding: 28px 20px; }
+    .step { padding: 28px 20px; }
+    .final-cta .btn--primary { font-size: 16px; padding: 18px 32px; width: 100%; justify-content: center; }
   }
   @media (max-width: 600px) {
     .deliverables__grid { grid-template-columns: 1fr; }
