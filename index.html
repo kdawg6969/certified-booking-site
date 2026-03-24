@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Certified Booking — AI Patient Reactivation for Jane App Clinics</title>
+<title>Certified Booking — AI Patient Reactivation for Health Clinics</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -598,6 +598,56 @@
     font-size: 18px;
   }
 
+  /* ── PLATFORMS ── */
+  .platforms {
+    padding: 56px 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+  }
+  .platforms__label {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 32px;
+  }
+  .platforms__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .platform-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: var(--chalk);
+    border: 1.5px solid var(--border);
+    border-radius: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .platform-pill:hover {
+    border-color: var(--sage);
+    box-shadow: 0 2px 12px rgba(42,111,91,0.1);
+  }
+  .platform-pill img {
+    height: 22px;
+    width: auto;
+    display: block;
+  }
+  .platform-pill--more {
+    color: var(--slate);
+    font-weight: 500;
+    border-style: dashed;
+  }
+
   /* ── FAQ ── */
   .faq__grid {
     max-width: 780px;
@@ -739,10 +789,10 @@
       <div class="hero__content">
         <div class="hero__badge">
           <span class="dot"></span>
-          Built Exclusively for Jane App Clinics
+          Works With Your Practice Management Software
         </div>
         <h1>Your clinic is sitting on <em>$10,000/month</em> in unbooked patients</h1>
-        <p class="lead">Certified Booking is a done-for-you AI patient reactivation system that connects directly to your Jane account, finds your dormant patients, and books them back into your calendar — automatically.</p>
+        <p class="lead">Certified Booking is a done-for-you AI patient reactivation system that connects directly to your practice management platform, finds your dormant patients, and books them back into your calendar — automatically.</p>
         <div class="hero__actions">
           <a href="https://cal.com/certifiedbooking/demo" class="btn btn--primary">
             Book Your Free Demo
@@ -807,6 +857,33 @@
   </div>
 </section>
 
+<!-- ════════════ PLATFORMS ════════════ -->
+<section class="platforms" id="platforms">
+  <div class="container">
+    <p class="platforms__label">Supported Platforms</p>
+    <div class="platforms__logos">
+      <div class="platform-pill">
+        <img src="https://jane.app/assets/jane-header-logo-5ed0c48b9f7d1634665009efe48392b1f8e34416b9753ead206154f8e6083036.svg" alt="Jane App">
+      </div>
+      <div class="platform-pill">
+        <img src="https://www.cliniko.com/files/cliniko_logo--dark.svg" alt="Cliniko">
+      </div>
+      <div class="platform-pill">
+        <img src="https://cdn.prod.website-files.com/6718175ada2bc9a32b0d5998/6718175ada2bc9a32b0d5da5_PB-logo-primary-transLightBG.svg" alt="Practice Better">
+      </div>
+      <div class="platform-pill">
+        <img src="https://cdn.prod.website-files.com/63ee703c0c31c8867210a47c/6720b8d91354c6cc78d53e95_noterro-logo.svg" alt="Noterro">
+      </div>
+      <div class="platform-pill">
+        <img src="https://owlpractice.ca/wp-content/uploads/2022/05/test-logo-may-17-FRAME.svg" alt="Owl Practice">
+      </div>
+      <div class="platform-pill platform-pill--more">
+        + More coming soon
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ════════════ PROBLEM ════════════ -->
 <section class="section" id="problem">
   <div class="container">
@@ -820,7 +897,7 @@
             <div class="problem__stat-icon">📉</div>
             <div>
               <h4>300–1,200 dormant patients</h4>
-              <p>The average Jane clinic has hundreds of patients who haven't booked in 90+ days.</p>
+              <p>The average clinic has hundreds of patients who haven't booked in 90+ days.</p>
             </div>
           </div>
           <div class="problem__stat-card">
@@ -862,8 +939,8 @@
       <div class="step">
         <span class="step__number">01</span>
         <div class="step__icon">🔗</div>
-        <h3>Connect Your Jane Account</h3>
-        <p>Authorize Certified Booking through Jane's official OAuth2 flow. It takes two minutes. Your data stays secure and compliant — HIPAA and PIPEDA aligned.</p>
+        <h3>Connect Your Practice Software</h3>
+        <p>Authorize Certified Booking through your platform's official OAuth2 flow. It takes two minutes. Your data stays secure and compliant — HIPAA and PIPEDA aligned.</p>
       </div>
       <div class="step">
         <span class="step__number">02</span>
@@ -875,7 +952,7 @@
         <span class="step__number">03</span>
         <div class="step__icon">📅</div>
         <h3>Patients Book Automatically</h3>
-        <p>Confirmed appointments land directly in your practitioners' live Jane calendars. No double-booking. No manual entry. No chasing callbacks.</p>
+        <p>Confirmed appointments land directly in your practitioners' live calendars. No double-booking. No manual entry. No chasing callbacks.</p>
       </div>
     </div>
   </div>
@@ -891,8 +968,8 @@
     <div class="deliverables__grid">
       <div class="deliverable">
         <div class="deliverable__icon">🔌</div>
-        <h4>Jane Extension Connection</h4>
-        <p>Your clinic authorizes our platform via Jane's official OAuth2 flow in minutes. Fully certified integration.</p>
+        <h4>Direct Platform Integration</h4>
+        <p>Your clinic authorizes our platform via your software's official OAuth2 flow in minutes. Fully certified integration.</p>
       </div>
       <div class="deliverable">
         <div class="deliverable__icon">🎯</div>
@@ -968,7 +1045,7 @@
         <span class="bonus__tag">5</span>
         <div>
           <h4>No-Show Reduction Protocol</h4>
-          <p>48hr + 2hr Jane appointment reminders — eliminates $500–$2,000/month in no-show losses.</p>
+          <p>48hr + 2hr appointment reminders — eliminates $500–$2,000/month in no-show losses.</p>
           <span class="value">$800 value</span>
         </div>
       </div>
@@ -1010,7 +1087,7 @@
       <div class="who__col who__col--for">
         <h3>✅ This is for you if…</h3>
         <ul class="who__list">
-          <li><span class="icon">→</span> You run a clinic on Jane App with 1+ practitioners</li>
+          <li><span class="icon">→</span> You run a clinic on Jane, Cliniko, Practice Better, Noterro, Owl Practice, or similar</li>
           <li><span class="icon">→</span> You have patients who haven't been in for 90+ days</li>
           <li><span class="icon">→</span> Your front desk doesn't have time for manual recall campaigns</li>
           <li><span class="icon">→</span> You want more patients without spending more on ads</li>
@@ -1020,7 +1097,7 @@
       <div class="who__col who__col--not">
         <h3>❌ This is NOT for you if…</h3>
         <ul class="who__list">
-          <li><span class="icon">→</span> You don't use Jane App for practice management</li>
+          <li><span class="icon">→</span> You don't use a supported practice management platform</li>
           <li><span class="icon">→</span> You're a brand-new clinic with no patient database yet</li>
           <li><span class="icon">→</span> You're looking for a DIY tool (we're fully done-for-you)</li>
           <li><span class="icon">→</span> You're not open to AI-assisted patient communication</li>
@@ -1039,8 +1116,8 @@
     </div>
     <div class="faq__grid">
       <div class="faq__item">
-        <button class="faq__q">How does this connect to my Jane account? <span class="chevron">+</span></button>
-        <div class="faq__a"><div class="faq__a-inner">We use Jane's official Technology Partner API with OAuth2 authentication. Your clinic authorizes the connection in a few clicks — the same way you'd connect any certified Jane Extension. Your data is fully secure and compliant.</div></div>
+        <button class="faq__q">How does this connect to my practice management software? <span class="chevron">+</span></button>
+        <div class="faq__a"><div class="faq__a-inner">We integrate with each platform's official API using OAuth2 authentication. Your clinic authorizes the connection in a few clicks — the same way you'd connect any certified integration. We currently support Jane, Cliniko, Practice Better, Noterro, and Owl Practice. Your data is fully secure and compliant.</div></div>
       </div>
       <div class="faq__item">
         <button class="faq__q">Is this compliant with HIPAA and PIPEDA? <span class="chevron">+</span></button>
